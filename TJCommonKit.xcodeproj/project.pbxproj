@@ -17,6 +17,7 @@
 		2BC05B322179CB89002AB836 /* TJCommonDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC05B312179CB89002AB836 /* TJCommonDefines.swift */; };
 		2BC05B402179D24A002AB836 /* UIView+TJCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC05B3F2179D24A002AB836 /* UIView+TJCommon.swift */; };
 		2BC05B432179D26D002AB836 /* UIView+TJCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC05B422179D26D002AB836 /* UIView+TJCommon.m */; };
+		2BC3B2B0217DF67C004757D5 /* TJActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC3B2AF217DF67C004757D5 /* TJActionSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		2BC05B3F2179D24A002AB836 /* UIView+TJCommon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TJCommon.swift"; sourceTree = "<group>"; };
 		2BC05B412179D26D002AB836 /* UIView+TJCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+TJCommon.h"; sourceTree = "<group>"; };
 		2BC05B422179D26D002AB836 /* UIView+TJCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+TJCommon.m"; sourceTree = "<group>"; };
+		2BC3B2AF217DF67C004757D5 /* TJActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TJActionSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		2BC05B452179D314002AB836 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2BC3B2AF217DF67C004757D5 /* TJActionSheet.swift */,
 				2BC05B412179D26D002AB836 /* UIView+TJCommon.h */,
 				2BC05B422179D26D002AB836 /* UIView+TJCommon.m */,
 			);
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC3B2B0217DF67C004757D5 /* TJActionSheet.swift in Sources */,
 				2BC05B322179CB89002AB836 /* TJCommonDefines.swift in Sources */,
 				2BC05B432179D26D002AB836 /* UIView+TJCommon.m in Sources */,
 				2BC05B042179CAAB002AB836 /* ViewController.swift in Sources */,

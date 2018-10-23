@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BB13B51217F02A800D5C6A9 /* TJActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB13B50217F02A800D5C6A9 /* TJActivityIndicatorView.swift */; };
 		2BC05B022179CAAB002AB836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC05B012179CAAB002AB836 /* AppDelegate.swift */; };
 		2BC05B042179CAAB002AB836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC05B032179CAAB002AB836 /* ViewController.swift */; };
 		2BC05B072179CAAB002AB836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC05B052179CAAB002AB836 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2BB13B50217F02A800D5C6A9 /* TJActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TJActivityIndicatorView.swift; sourceTree = "<group>"; };
 		2BC05AFE2179CAAB002AB836 /* TJCommonKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TJCommonKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC05B012179CAAB002AB836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC05B032179CAAB002AB836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		2BC05B452179D314002AB836 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2BB13B50217F02A800D5C6A9 /* TJActivityIndicatorView.swift */,
 				2BC3B2AF217DF67C004757D5 /* TJActionSheet.swift */,
 				2BC05B412179D26D002AB836 /* UIView+TJCommon.h */,
 				2BC05B422179D26D002AB836 /* UIView+TJCommon.m */,
@@ -310,6 +313,7 @@
 				2BC3B2B0217DF67C004757D5 /* TJActionSheet.swift in Sources */,
 				2BC05B322179CB89002AB836 /* TJCommonDefines.swift in Sources */,
 				2BC05B432179D26D002AB836 /* UIView+TJCommon.m in Sources */,
+				2BB13B51217F02A800D5C6A9 /* TJActivityIndicatorView.swift in Sources */,
 				2BC05B042179CAAB002AB836 /* ViewController.swift in Sources */,
 				2BC05B022179CAAB002AB836 /* AppDelegate.swift in Sources */,
 				2BC05B402179D24A002AB836 /* UIView+TJCommon.swift in Sources */,
@@ -490,13 +494,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TJCommonKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tjzl.TJCommonKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TJCommonKit/OCKit/TJCommonKit-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TJCommonKit/TJCommonKit-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,13 +515,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TJCommonKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tjzl.TJCommonKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "TJCommonKit/OCKit/TJCommonKit-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "TJCommonKit/TJCommonKit-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

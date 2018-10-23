@@ -300,10 +300,6 @@ extension TJActionSheet: UITableViewDelegate {
 
 
 
-
-
-
-
 class TJActionSheetCell: UITableViewCell {
     //MARK: - public property
     internal var signlabel: UILabel!

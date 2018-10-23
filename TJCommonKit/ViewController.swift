@@ -13,8 +13,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.white
     }
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        TJActivityIndicatorView.sharedInstance.setMessage("载入中")
+        TJActivityIndicatorView.sharedInstance.startAnimating(self.view, message: nil)
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            TJActivityIndicatorView.sharedInstance.stopAnimating(self.view)
+        }
+    }
 
 }
 

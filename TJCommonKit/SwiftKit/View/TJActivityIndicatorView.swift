@@ -10,11 +10,11 @@ import UIKit
 @objc(TJActivityIndicatorView)
 class TJActivityIndicatorView: UIView {
 
-    public static let sharedInstance = TJActivityIndicatorView()
-    public var messageSpacing: CGFloat = 10
-    public var animating: Bool { return isAnimating }
+    @objc public static let sharedInstance = TJActivityIndicatorView()
+    @objc public var messageSpacing: CGFloat = 10
+    @objc public var animating: Bool { return isAnimating }
 
-    public var indicatorTransform: CGFloat = 1
+    @objc public var indicatorTransform: CGFloat = 1
 
     fileprivate let waitingToStartGroup = DispatchGroup()
     private(set) public var isAnimating: Bool = false
@@ -41,19 +41,19 @@ class TJActivityIndicatorView: UIView {
     
     //MARK: - public property
 
-    public final func setMessage(_ message: String?) {
+    @objc public final func setMessage(_ message: String?) {
         waitingToStartGroup.notify(queue: DispatchQueue.main) {
             self.messageLabel.text = message
         }
     }
     
-    public final func setTextColor(_ color: UIColor?) {
+    @objc public final func setTextColor(_ color: UIColor?) {
         waitingToStartGroup.notify(queue: DispatchQueue.main) {
             self.messageLabel.textColor = color
         }
     }
     
-    public final func setIndicatorColor(_ color: UIColor?) {
+    @objc public final func setIndicatorColor(_ color: UIColor?) {
         waitingToStartGroup.notify(queue: DispatchQueue.main) {
             self.activityIndicatorView.color = color
         }
@@ -62,10 +62,10 @@ class TJActivityIndicatorView: UIView {
     /**
      Start animating.
      */
-    public final func startAnimating(_ view:UIView? , message:String?) {
+    @objc public final func startAnimating(_ view:UIView? , message:String?) {
         isAnimating = true
         let containerView = UIView(frame: CGRect.zero)
-        containerView.backgroundColor = UIColor.white
+        containerView.backgroundColor = UIColor.clear
         containerView.restorationIdentifier = tjrestorationIdentifier
         containerView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -124,7 +124,7 @@ class TJActivityIndicatorView: UIView {
     /**
      Stop animating.
      */
-    public final func stopAnimating(_ view:UIView?) {
+    @objc public final func stopAnimating(_ view:UIView?) {
         if view == nil {
             for window in UIApplication.shared.windows {
                 for item in window.subviews

@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         TJActivityIndicatorView.sharedInstance.setMessage("载入中")
+        TJActivityIndicatorView.sharedInstance.indicatorTransform = 0.7
+        TJActivityIndicatorView.sharedInstance.messageSpacing = 0
         TJActivityIndicatorView.sharedInstance.startAnimating(self.view, message: nil)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
             TJActivityIndicatorView.sharedInstance.stopAnimating(self.view)

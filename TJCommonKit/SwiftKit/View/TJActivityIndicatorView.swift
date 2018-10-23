@@ -13,7 +13,9 @@ class TJActivityIndicatorView: UIView {
     public static let sharedInstance = TJActivityIndicatorView()
     public var messageSpacing: CGFloat = 10
     public var animating: Bool { return isAnimating }
-    
+
+    public var indicatorTransform: CGFloat = 1
+
     fileprivate let waitingToStartGroup = DispatchGroup()
     private(set) public var isAnimating: Bool = false
     let tjrestorationIdentifier : String = "TJActivityIndicatorViewContainer"
@@ -29,7 +31,7 @@ class TJActivityIndicatorView: UIView {
     }()
     
     private let activityIndicatorView: UIActivityIndicatorView = {
-        let activityView = UIActivityIndicatorView(frame: CGRect.init(x: 0, y: 0, width: 60, height: 60))
+        let activityView = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         activityView.style = .whiteLarge
         activityView.color = .gray
         activityView.translatesAutoresizingMaskIntoConstraints = false
@@ -87,7 +89,8 @@ class TJActivityIndicatorView: UIView {
             keyWindow!.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
         }
         containerView.addSubview(activityIndicatorView)
-
+        let transform:CGAffineTransform = CGAffineTransform.init(scaleX: self.indicatorTransform, y: self.indicatorTransform)
+        activityIndicatorView.transform = transform;
         ({
             let xConstraint = NSLayoutConstraint(item: containerView, attribute: .centerX, relatedBy: .equal, toItem: activityIndicatorView, attribute: .centerX, multiplier: 1, constant: 0)
             let yConstraint = NSLayoutConstraint(item: containerView, attribute: .centerY, relatedBy: .equal, toItem: activityIndicatorView, attribute: .centerY, multiplier: 1, constant: 0)
